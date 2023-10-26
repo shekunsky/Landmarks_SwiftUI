@@ -9,10 +9,31 @@ import SwiftUI
 
 struct ContentView: View {
     @EnvironmentObject var modelData: ModelData
+    @State private var selection: Tab = .featured
+    
+    enum Tab {
+        case featured
+        case list
+    }
+    
     
     var body: some View {
-        LandmarkList(modelData: modelData)
+        TabView(selection: $selection) {
+            CategoryHome(modelData: modelData)
+                .tabItem {
+                    Label("Featured", systemImage: "star")
+                }
+                .tag(Tab.featured)
+            
+            
+            LandmarkList(modelData: modelData)
+                .tabItem {
+                    Label("List", systemImage: "list.bullet")
+                }
+                .tag(Tab.list)
+        }
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CategoryHome: View {
-    @EnvironmentObject var modelData: ModelData
+    @StateObject var modelData: ModelData
     
     var body: some View {
         NavigationSplitView {
@@ -21,7 +21,7 @@ struct CategoryHome: View {
                     .listRowInsets(EdgeInsets())
                 
                 ForEach(modelData.categories.keys.sorted(), id: \.self) { key in
-                    CategoryRow(categoryName: key, items: modelData.categories[key]!)
+                    CategoryRow(modelData: modelData, categoryName: key, items: modelData.categories[key]!)
                     
                 }
                 .listRowInsets(EdgeInsets())
@@ -35,7 +35,7 @@ struct CategoryHome: View {
 
 struct CategoryHome_Previews: PreviewProvider {
     static var previews: some View {
-        CategoryHome()
+        CategoryHome(modelData: ModelData())
             .environmentObject(ModelData())
     }
 }
