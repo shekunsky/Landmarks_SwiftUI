@@ -37,8 +37,7 @@ struct CategoryHome: View {
                 }
             }
             .sheet(isPresented: $showingProfile) {
-                ProfileHost()
-                    .environmentObject(modelData)
+                ProfileHost(modelData: modelData)
             }
         } detail: {
             Text("Select a Landmark")
