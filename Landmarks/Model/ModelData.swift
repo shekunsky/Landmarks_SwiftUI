@@ -11,7 +11,7 @@ import SwiftUI
 class ModelData: ObservableObject {
     @Published var landmarks: [Landmark] = load("landmarkData.json")
     var hikes: [Hike] = load("hikeData.json")
-    var profile = Profile.default
+    @Published var profile = Profile.default
     
     var features: [Landmark] {
         landmarks.filter { $0.isFeatured }
