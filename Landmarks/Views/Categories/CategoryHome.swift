@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CategoryHome: View {
-    @StateObject var modelData: ModelData
+    @EnvironmentObject var modelData: ModelData
     @State private var showingProfile = false
     
     var body: some View {
@@ -22,7 +22,7 @@ struct CategoryHome: View {
                     .listRowInsets(EdgeInsets())
                 
                 ForEach(modelData.categories.keys.sorted(), id: \.self) { key in
-                    CategoryRow(modelData: modelData, categoryName: key, items: modelData.categories[key]!)
+                    CategoryRow(categoryName: key, items: modelData.categories[key]!)
                     
                 }
                 .listRowInsets(EdgeInsets())
@@ -37,7 +37,7 @@ struct CategoryHome: View {
                 }
             }
             .sheet(isPresented: $showingProfile) {
-                ProfileHost(modelData: modelData)
+                ProfileHost()
             }
         } detail: {
             Text("Select a Landmark")
@@ -47,7 +47,7 @@ struct CategoryHome: View {
 
 struct CategoryHome_Previews: PreviewProvider {
     static var previews: some View {
-        CategoryHome(modelData: ModelData())
+        CategoryHome()
             .environmentObject(ModelData())
     }
 }

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct LandmarkList: View {
-    @StateObject var modelData: ModelData
+    @EnvironmentObject var modelData: ModelData
     @State private var showFavoritesOnly = false
     
     var filteredLandmarks: [Landmark] {
@@ -27,7 +27,7 @@ struct LandmarkList: View {
                 
                 ForEach(filteredLandmarks) { landmark in
                     NavigationLink {
-                        LandmarkDetail(modelData: modelData, landmark: landmark)
+                        LandmarkDetail(landmark: landmark)
                     } label: {
                         LandmarkRow(landmark: landmark)
                     }
@@ -42,6 +42,7 @@ struct LandmarkList: View {
 
 struct LandmarkList_Previews: PreviewProvider {
     static var previews: some View {
-        LandmarkList(modelData: ModelData())
+        LandmarkList()
+            .environmentObject(ModelData())
     }
 }
