@@ -18,8 +18,7 @@ struct LandmarkList: View {
     }
     
     var body: some View {
-        
-        NavigationSplitView {
+        NavigationView {
             List {
                 Toggle(isOn: $showFavoritesOnly) {
                     Text("Favorites only")
@@ -32,10 +31,8 @@ struct LandmarkList: View {
                         LandmarkRow(landmark: landmark)
                     }
                 }
-                .navigationTitle("Landmarks")
             }
-        } detail: {
-            Text("Select a Landmark")
+            .navigationTitle("Landmarks")
         }
     }
 }

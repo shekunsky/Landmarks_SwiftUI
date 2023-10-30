@@ -79,6 +79,7 @@
 		3B46E9672AEFE8B300FB904C /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3891662AE936B700B41DEA /* LandmarkList.swift */; };
 		3B46E9682AEFE8B300FB904C /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B38915D2AE930E800B41DEA /* Landmark.swift */; };
 		3B46E9692AEFE8B300FB904C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B38914D2AE91B1900B41DEA /* Assets.xcassets */; };
+		3B46E96B2AEFE95B00FB904C /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B46E96A2AEFE95B00FB904C /* LandmarkDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -166,6 +167,7 @@
 		3B46E9542AEFE7F600FB904C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B46E9572AEFE7F600FB904C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3B46E9592AEFE7F600FB904C /* MacLandmarks.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacLandmarks.entitlements; sourceTree = "<group>"; };
+		3B46E96A2AEFE95B00FB904C /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -370,6 +372,7 @@
 			isa = PBXGroup;
 			children = (
 				3B46E9522AEFE7F300FB904C /* ContentView.swift */,
+				3B46E96A2AEFE95B00FB904C /* LandmarkDetail.swift */,
 				3B46E9542AEFE7F600FB904C /* Assets.xcassets */,
 				3B46E9592AEFE7F600FB904C /* MacLandmarks.entitlements */,
 				3B46E9562AEFE7F600FB904C /* Preview Content */,
@@ -590,6 +593,7 @@
 				3B46E9682AEFE8B300FB904C /* Landmark.swift in Sources */,
 				3B46E9612AEFE8B300FB904C /* Profile.swift in Sources */,
 				3B46E95F2AEFE8B300FB904C /* ModelData.swift in Sources */,
+				3B46E96B2AEFE95B00FB904C /* LandmarkDetail.swift in Sources */,
 				3B46E95D2AEFE8B300FB904C /* FavoriteButton.swift in Sources */,
 				3B46E9602AEFE8B300FB904C /* LandmarksApp.swift in Sources */,
 				3B46E9632AEFE8B300FB904C /* LandmarkRow.swift in Sources */,
@@ -868,7 +872,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 12.7;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.shekunsky.MacLandmarks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -897,7 +901,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 12.7;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.shekunsky.MacLandmarks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
