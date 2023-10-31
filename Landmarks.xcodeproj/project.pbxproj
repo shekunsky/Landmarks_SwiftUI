@@ -82,6 +82,7 @@
 		3B46E96E2AEFF84A00FB904C /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3891642AE9341900B41DEA /* LandmarkRow.swift */; };
 		3B46E9702AF130E100FB904C /* LandmarkCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B46E96F2AF130E100FB904C /* LandmarkCommands.swift */; };
 		3B46E9712AF130E100FB904C /* LandmarkCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B46E96F2AF130E100FB904C /* LandmarkCommands.swift */; };
+		3B46E9732AF1390200FB904C /* LandmarkSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B46E9722AF1390200FB904C /* LandmarkSettings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -172,6 +173,7 @@
 		3B46E96A2AEFE95B00FB904C /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
 		3B46E96C2AEFF7E900FB904C /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
 		3B46E96F2AF130E100FB904C /* LandmarkCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkCommands.swift; sourceTree = "<group>"; };
+		3B46E9722AF1390200FB904C /* LandmarkSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkSettings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -292,6 +294,7 @@
 				3B3891662AE936B700B41DEA /* LandmarkList.swift */,
 				3B46E96F2AF130E100FB904C /* LandmarkCommands.swift */,
 				3B3891682AE9387100B41DEA /* LandmarkDetail.swift */,
+				3B46E9722AF1390200FB904C /* LandmarkSettings.swift */,
 			);
 			path = Landmarks;
 			sourceTree = "<group>";
@@ -598,6 +601,7 @@
 			files = (
 				3B46E9532AEFE7F300FB904C /* ContentView.swift in Sources */,
 				3B46E9682AEFE8B300FB904C /* Landmark.swift in Sources */,
+				3B46E9732AF1390200FB904C /* LandmarkSettings.swift in Sources */,
 				3B46E9612AEFE8B300FB904C /* Profile.swift in Sources */,
 				3B46E95F2AEFE8B300FB904C /* ModelData.swift in Sources */,
 				3B46E9712AF130E100FB904C /* LandmarkCommands.swift in Sources */,
